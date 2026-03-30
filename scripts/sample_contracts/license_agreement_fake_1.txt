@@ -1,0 +1,89 @@
+SOFTWARE LICENSE AGREEMENT
+
+This Software License Agreement (the “Agreement”) is entered into May 1, 2026 (the “Effective Date”), by and between Helios Software Solutions Ltd., with an address of Technoparkstrasse 1, 8005 Zurich, Switzerland (the “Licensor”), and BrightWave Analytics Inc., with an address of 200 Market Street, San Francisco, CA 94105, USA (the “Licensee”), collectively referred to as the “Parties.”
+
+1. LICENSE GRANT
+
+The Licensor hereby grants to the Licensee a non-exclusive, non-transferable, revocable license to use the proprietary software known as “Helios DataCore Platform” (the “Software”) solely for internal business purposes.
+
+2. TERM
+
+This Agreement shall commence on the Effective Date and continue for an initial term of one (1) year, unless earlier terminated in accordance with this Agreement. The Agreement shall automatically renew for successive one (1) year terms unless terminated by either Party.
+
+3. FEES AND PAYMENT
+
+The Licensee agrees to pay the Licensor an annual license fee of $48,000, payable within thirty (30) days of invoice issuance.
+
+4. RESTRICTIONS
+
+The Licensee shall not:
+
+Copy, modify, or distribute the Software except as expressly permitted;
+Reverse engineer or attempt to derive source code;
+Sub-license, rent, or lease the Software to any third party.
+5. OWNERSHIP
+
+The Software and all intellectual property rights therein remain the sole property of the Licensor.
+
+6. SUPPORT AND MAINTENANCE
+
+The Licensor shall provide standard support and maintenance services during the term of this Agreement, including updates and bug fixes.
+
+7. ANNIVERSARY-TRIGGERED EVENT (LICENSE UPGRADE OPTION)
+
+7.1 Definition of Anniversary Date
+The “Anniversary Date” shall mean each yearly recurrence of the Effective Date (i.e., May 1 of each subsequent year during the Term).
+
+7.2 Exclusive Trigger Condition
+The Licensee shall have the right to request a License Tier Upgrade Event (the “Upgrade Event”) only on an Anniversary Date.
+
+7.3 Nature of the Upgrade Event
+Upon valid exercise of the Upgrade Event:
+
+The Licensee may upgrade to a higher usage tier (including increased user limits and additional features);
+Pricing shall be adjusted according to the Licensor’s then-current pricing schedule.
+
+7.4 Limitation
+The Upgrade Event:
+
+May not be initiated or requested at any time other than the Anniversary Date;
+Any request made before or after the Anniversary Date shall be deemed invalid and automatically deferred to the next Anniversary Date.
+
+7.5 Notice Requirement
+The Licensee must provide written notice of its intent to trigger the Upgrade Event no later than ten (10) days prior to the Anniversary Date.
+
+8. TERMINATION
+
+Either Party may terminate this Agreement upon thirty (30) days’ written notice. Upon termination, the Licensee must cease all use of the Software.
+
+9. WARRANTIES DISCLAIMER
+
+THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+10. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOSS OF PROFITS OR DATA.
+
+11. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of Switzerland.
+
+12. ENTIRE AGREEMENT
+
+This Agreement constitutes the entire agreement between the Parties and supersedes all prior agreements. Any amendments must be made in writing and signed by both Parties.
+
+13. SIGNATURES
+
+Licensor:
+Helios Software Solutions Ltd.
+By: ___________________________
+Name: _________________________
+Title: __________________________
+Date: __________________________
+
+Licensee:
+BrightWave Analytics Inc.
+By: ___________________________
+Name: _________________________
+Title: __________________________
+Date: __________________________
