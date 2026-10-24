@@ -1,0 +1,20 @@
+{
+  "parties": [
+    {
+      "name": "Alpine Tech Manufacturing GmbH",
+      "address": "Industriestrasse 45, 8005 Zurich, Switzerland",
+      "role": "Seller"
+    },
+    {
+      "name": "Nordic Retail Solutions AB",
+      "address": "Sveavägen 102, 113 50 Stockholm, Sweden",
+      "role": "Buyer"
+    }
+  ],
+  "effective_date": "2026-04-15",
+  "termination_date": null,
+  "penalties": [
+    "five percent (5%) late payment penalty for balances not paid within thirty (30) days",
+    "The Buyer will be responsible for payment of all Goods delivered and accepted up to the date of termination."
+  ]
+}
