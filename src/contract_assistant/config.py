@@ -5,8 +5,9 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_
 
 load_dotenv()
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
-MISTRAL_MODEL = "mistral-small"
+MISTRAL_MODEL = "mistral-tiny"
 
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 RAW_CONTRACTS_DIR = os.path.join(DATA_DIR, "raw_contracts")
 EXTRACTED_DIR = os.path.join(DATA_DIR, "extracted")
+DB_PATH = os.path.join(DATA_DIR, "contracts.duckdb")

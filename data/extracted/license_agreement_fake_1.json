@@ -1,1 +1,59 @@
-{"parties": [{"name": "Helios Software Solutions Ltd.", "address": "Technoparkstrasse 1, 8005 Zurich, Switzerland", "role": "Licensor"}, {"name": "BrightWave Analytics Inc.", "address": "200 Market Street, San Francisco, CA 94105, USA", "role": "Licensee"}], "effective_date": "2026-05-01", "termination_date": null}
+{
+  "parties": [
+    {
+      "name": "Helios Software Solutions Ltd.",
+      "address": "Technoparkstrasse 1, 8005 Zurich, Switzerland",
+      "role": "Licensor"
+    },
+    {
+      "name": "BrightWave Analytics Inc.",
+      "address": "200 Market Street, San Francisco, CA 94105, USA",
+      "role": "Licensee"
+    }
+  ],
+  "effective_date": "2026-05-01",
+  "termination_date": null,
+  "obligations_and_penalties": {
+    "license_grant": {
+      "description": "Non-exclusive, non-transferable, revocable license to use the proprietary software known as 'Helios DataCore Platform' solely for internal business purposes."
+    },
+    "fees_and_payment": {
+      "description": "Licensee agrees to pay an annual license fee of $48,000, payable within thirty (30) days of invoice issuance."
+    },
+    "restrictions": {
+      "description": [
+        "The Licensee shall not copy, modify, or distribute the Software except as expressly permitted;",
+        "The Licensee shall not reverse engineer or attempt to derive source code;",
+        "The Licensee shall not sub-license, rent, or lease the Software to any third party."
+      ]
+    },
+    "support_and_maintenance": {
+      "description": "The Licensor shall provide standard support and maintenance services during the term of this Agreement, including updates and bug fixes."
+    },
+    "upgrade_event": {
+      "description": [
+        {
+          "event": "License Tier Upgrade Event",
+          "trigger": "Anniversary Date (May 1 of each subsequent year during the Term)",
+          "conditions": [
+            "Licensee must provide written notice of intent no later than ten (10) days prior to the Anniversary Date.",
+            "Upgrade may not be initiated at any other time than the Anniversary Date.",
+            "Pricing shall be adjusted according to the Licensor’s then-current pricing schedule upon valid exercise."
+          ]
+        }
+      ]
+    },
+    "termination": {
+      "description": [
+        "Either Party may terminate this Agreement upon thirty (30) days’ written notice.",
+        "Upon termination, the Licensee must cease all use of the Software."
+      ]
+    },
+    "warranty_disclaimer": {
+      "description": "The Software is provided 'AS IS,' without warranty of any kind, express or implied, including but not limited to merchantability or fitness for a particular purpose."
+    },
+    "limitation_of_liability": {
+      "description": "In no event shall the Licensor be liable for any indirect, incidental, or consequential damages, including loss of profits or data."
+    }
+  }
+}

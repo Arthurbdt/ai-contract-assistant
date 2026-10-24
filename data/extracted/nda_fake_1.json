@@ -3,18 +3,14 @@
     {
       "name": "Acme Corp",
       "address": null,
-      "role": "Disclosing Party or Receiving Party"
+      "role": null
     },
     {
       "name": "Globex Inc",
       "address": null,
-      "role": "Disclosing Party or Receiving Party"
+      "role": null
     }
   ],
   "effective_date": "2023-01-15",
-  "termination_date": null,
-  "penalties": [
-    "The Receiving Party agrees to protect the Confidential Information with at least the same degree of care it uses to protect its own confidential information, but no less than a reasonable standard of care.",
-    "Termination of this Agreement shall not relieve either Party of its obligations with respect to Confidential Information disclosed prior to termination."
-  ]
+  "termination_date": null
 }

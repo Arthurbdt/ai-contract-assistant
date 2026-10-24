@@ -1,0 +1,77 @@
+SOFTWARE LICENSE AGREEMENT
+
+Agreement No.: SLA-2026-0418
+
+This Software License Agreement (the "Agreement") is entered into as of
+1 March 2026 (the "Effective Date") by and between:
+
+SUPPLIER:
+Northvale Analytics GmbH
+Seefeldstrasse 214
+8008 Zürich, Switzerland
+(the "Supplier")
+
+BUYER:
+Harlow & Finch Logistics SA
+Rue du Rhône 87
+1204 Geneva, Switzerland
+(the "Buyer")
+
+1. GRANT OF LICENSE
+The Supplier grants the Buyer a non-exclusive, non-transferable license
+to use the software product "Northvale Insight Suite" (the "Software")
+for internal business purposes only, for up to 150 named users.
+
+2. TERM
+2.1 This Agreement commences on 1 April 2026 (the "Start Date") and
+    remains in force until 31 March 2028 (the "End Date"), unless
+    terminated earlier in accordance with Section 7.
+2.2 The Agreement shall automatically renew for successive 12-month
+    periods unless either party gives written notice of non-renewal at
+    least 90 days before the End Date or the end of any renewal period.
+
+3. FEES AND PAYMENT
+3.1 The Buyer shall pay an annual license fee of CHF 84,000 (eighty-four
+    thousand Swiss francs), excluding VAT.
+3.2 Fees are invoiced annually in advance and payable within 30 days of
+    the invoice date.
+3.3 The Supplier may increase fees upon renewal by no more than 4% per
+    year, with at least 60 days' written notice.
+3.4 Late payments bear interest at 5% per annum.
+
+4. SUPPORT AND SERVICE LEVELS
+The Supplier shall provide support during business hours (08:00-18:00
+CET, Monday to Friday) and guarantees 99.5% monthly availability of the
+hosted components. If availability falls below this level, the Buyer is
+entitled to a service credit of 5% of the monthly fee per 0.5% shortfall,
+capped at 25%.
+
+5. CONFIDENTIALITY
+Each party shall keep confidential all non-public information received
+from the other party and shall not disclose it to third parties without
+prior written consent. This obligation survives termination for 3 years.
+
+6. LIABILITY
+Except in cases of gross negligence or wilful misconduct, each party's
+total liability under this Agreement shall not exceed the fees paid by
+the Buyer in the 12 months preceding the claim.
+
+7. TERMINATION
+7.1 Either party may terminate this Agreement with immediate effect by
+    written notice if the other party commits a material breach and
+    fails to remedy it within 30 days of notification.
+7.2 The Buyer may terminate for convenience with 6 months' written
+    notice, subject to payment of an early termination fee equal to 50%
+    of the remaining fees for the current term.
+
+8. GOVERNING LAW AND JURISDICTION
+This Agreement is governed by Swiss law. Exclusive place of jurisdiction
+is Zürich, Switzerland.
+
+SIGNATURES
+
+For Northvale Analytics GmbH          For Harlow & Finch Logistics SA
+
+Name: Lena Brunner                    Name: Marc Delacroix
+Title: Managing Director              Title: Chief Operating Officer
+Date: 1 March 2026                    Date: 3 March 2026

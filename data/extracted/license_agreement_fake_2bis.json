@@ -1,0 +1,16 @@
+{
+  "parties": [
+    {
+      "name": "Northvale Analytics GmbH",
+      "address": "Seefeldstrasse 214, 8008 Zürich, Switzerland",
+      "role": "Supplier"
+    },
+    {
+      "name": "Harlow & Finch Logistics SA",
+      "address": "Rue du Rhône 87, 1204 Geneva, Switzerland",
+      "role": "Buyer"
+    }
+  ],
+  "effective_date": "2026-03-01",
+  "termination_date": "2028-03-31"
+}
