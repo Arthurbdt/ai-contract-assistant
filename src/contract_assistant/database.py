@@ -130,3 +130,74 @@ def list_contracts() -> List[Dict[str, Any]]:
         return [dict(zip(['contract_id', 'file_name', 'contract_type', 'effective_date', 'termination_date', 'raw_text', 'created_at'], c)) for c in contracts]
     finally:
         conn.close()
+
+
+def get_contracts_by_party(party_name: str) -> List[Dict[str, Any]]:
+    """Find all contracts involving a specific party.
+    
+    Args:
+        party_name: Name or partial name of the party to search for
+        
+    Returns:
+        List of contract dictionaries matching the party
+    """
+    conn = get_connection()
+    
+    try:
+        contracts = conn.execute("""
+            SELECT DISTINCT c.rowid, c.file_name, c.contract_type, c.effective_date, c.termination_date, c.raw_text, c.created_at
+            FROM contracts c
+            JOIN parties p ON c.rowid = p.contract_id
+            WHERE p.name LIKE ?
+            ORDER BY c.created_at DESC
+        """, (f"%{party_name}%",)).fetchall()
+        return [dict(zip(['contract_id', 'file_name', 'contract_type', 'effective_date', 'termination_date', 'raw_text', 'created_at'], c)) for c in contracts]
+    finally:
+        conn.close()
+
+
+def get_contracts_by_type(contract_type: str) -> List[Dict[str, Any]]:
+    """Filter contracts by type (license, nda, sales, other).
+    
+    Args:
+        contract_type: Type of contract to filter by
+        
+    Returns:
+        List of contract dictionaries of the specified type
+    """
+    conn = get_connection()
+    
+    try:
+        contracts = conn.execute("""
+            SELECT rowid, file_name, contract_type, effective_date, termination_date, raw_text, created_at
+            FROM contracts
+            WHERE contract_type = ?
+            ORDER BY created_at DESC
+        """, (contract_type.lower(),)).fetchall()
+        return [dict(zip(['contract_id', 'file_name', 'contract_type', 'effective_date', 'termination_date', 'raw_text', 'created_at'], c)) for c in contracts]
+    finally:
+        conn.close()
+
+
+def get_upcoming_expirations(days: int = 30) -> List[Dict[str, Any]]:
+    """Find contracts that will expire in the next N days.
+    
+    Args:
+        days: Number of days to look ahead for expirations
+        
+    Returns:
+        List of contract dictionaries with upcoming termination dates
+    """
+    conn = get_connection()
+    
+    try:
+        contracts = conn.execute("""
+            SELECT rowid, file_name, contract_type, effective_date, termination_date, raw_text, created_at
+            FROM contracts
+            WHERE termination_date IS NOT NULL
+            AND termination_date BETWEEN CURRENT_DATE AND DATE_ADD(CURRENT_DATE, ?)
+            ORDER BY termination_date
+        """, (days,)).fetchall()
+        return [dict(zip(['contract_id', 'file_name', 'contract_type', 'effective_date', 'termination_date', 'raw_text', 'created_at'], c)) for c in contracts]
+    finally:
+        conn.close()
