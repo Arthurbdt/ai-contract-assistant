@@ -13,8 +13,11 @@ def extract_contract(input_file: str, output_file: str):
         contract_text = f.read()
         print(contract_text[:100])
 
-    # Define prompt
-    prompt = build_contract_prompt(contract_text)
+    # Define prompt - use all fields including contract_type and governing_law
+    prompt = build_contract_prompt(
+        contract_text,
+        fields=['contract_type', 'governing_law', 'parties', 'effective_date', 'termination_date']
+    )
 
     # Call Mistral API
     client = Mistral(api_key=MISTRAL_API_KEY)
@@ -50,8 +53,11 @@ def extract_and_store_contract(input_file: str) -> int:
     with open(input_file, "r", encoding="utf-8") as f:
         contract_text = f.read()
 
-    # Define prompt
-    prompt = build_contract_prompt(contract_text)
+    # Define prompt - use all fields including contract_type and governing_law
+    prompt = build_contract_prompt(
+        contract_text,
+        fields=['contract_type', 'governing_law', 'parties', 'effective_date', 'termination_date']
+    )
 
     # Call Mistral API
     client = Mistral(api_key=MISTRAL_API_KEY)
@@ -63,6 +69,46 @@ def extract_and_store_contract(input_file: str) -> int:
 
     # Parse extracted data
     extracted_data = json.loads(response.choices[0].message.content)
+    
+    # Log what we received
+    print(f"Raw extracted data type: {type(extracted_data)}")
+    print(f"Raw extracted data: {extracted_data}")
+    
+    # Normalize the extracted data structure
+    normalized_data = {}
+    
+    # Handle case where extracted_data is a list (e.g., just parties)
+    if isinstance(extracted_data, list):
+        normalized_data['parties'] = extracted_data
+    elif isinstance(extracted_data, dict):
+        normalized_data = extracted_data
+    else:
+        # For other types, create empty structure
+        normalized_data = {}
+    
+    # Ensure parties is a list of dicts
+    if 'parties' in normalized_data:
+        if not isinstance(normalized_data['parties'], list):
+            normalized_data['parties'] = []
+        else:
+            # Convert any non-dict items in parties list to dict format
+            new_parties = []
+            for party in normalized_data['parties']:
+                if isinstance(party, dict):
+                    new_parties.append(party)
+                elif isinstance(party, str):
+                    new_parties.append({'name': party, 'address': None, 'role': None})
+                # Skip other types
+            normalized_data['parties'] = new_parties
+    else:
+        normalized_data['parties'] = []
+    
+    # Ensure all expected fields exist
+    for field in ['contract_type', 'governing_law', 'effective_date', 'termination_date']:
+        if field not in normalized_data:
+            normalized_data[field] = None
+    
+    extracted_data = normalized_data
     
     # Store in database
     contract_id = insert_contract(
